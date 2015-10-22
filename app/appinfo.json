@@ -1,0 +1,29 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        "location",
+        "configurable"
+    ],
+    "companyName": "UXVirtual",
+    "longName": "Vault Tec Industries",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/bg.png",
+                "name": "bg_image",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "VaultTec",
+    "targetPlatforms": [
+        "chalk"
+    ],
+    "uuid": "10c795f0-8a3e-4579-8b9e-f56955e1712c",
+    "versionLabel": "0.1",
+    "watchapp": {
+        "watchface": true
+    }
+}
