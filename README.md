@@ -1,6 +1,6 @@
 # Vault-Tec Industries Round Watchface
 
-Watchface for Pebble Time Round, based on the limited edition Vault-Tec Industries single rotation watch available on
+Slow style watchface for Pebble Time Round, based on the limited edition Vault-Tec Industries single rotation watch available on
 the Bethesda Store.
 
 ## Installation
