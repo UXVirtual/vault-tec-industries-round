@@ -51,16 +51,18 @@ static void hands_update_proc(Layer *layer, GContext *ctx) {
 
   float angle;
 
+    angle = ((TRIG_MAX_ANGLE * percentage) - (TRIG_MAX_ANGLE/2.0));
 
-  //if((((TRIG_MAX_ANGLE / 360.0) + 180) * percentage) > 360.0){
-  angle = ((TRIG_MAX_ANGLE / 360.0) + 180) * percentage * 360.0;
-  //}else{
-  //    angle = ((((TRIG_MAX_ANGLE / 360.0) + 180) * percentage)-360) * 360.0;
-  //}
+  if(angle < 0){
+    //angle = ((360 + (TRIG_MAX_ANGLE / 360.0)) * percentage - 180) * 360.0;
+    angle = angle+TRIG_MAX_ANGLE;
+  }
 
-  ftoa(buf,angle,5);
+  ftoa(buf,((TRIG_MAX_ANGLE / 360.0) * percentage),5);
 
   app_log(1,"main.c",69,"angle %s",buf);
+
+    //angle = 127*360;
 
   gpath_rotate_to(s_second_arrow, angle);
   #ifdef PBL_COLOR
