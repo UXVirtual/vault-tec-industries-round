@@ -9,7 +9,8 @@ the Bethesda Store.
 
 1.  Install homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-2.  Install the Pebble SDK v3.6 that supports Pebble Round: `brew brew install pebble/pebble-sdk/pebble-sdk`
+2.  Install the Pebble SDK v3.6 that supports Pebble Round: `brew install pebble/pebble-sdk/pebble-sdk`. If you have
+    errors installing this run `brew doctor` first.
 
 ## Run in simulator
 
